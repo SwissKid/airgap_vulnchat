@@ -75,3 +75,8 @@ class Client:
         new_msg = Message(msg, to, self.name)
         self.server.send_message(new_msg)
 
+
+
+if __name__ == "__main__":
+    name = raw_input("Your Handle:")
+    Client(name, "localhost", 12345, arrow.get(0))
